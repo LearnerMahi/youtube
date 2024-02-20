@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/appbar"
+         />
+    <FrameLayout
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"/>
+    <com.google.android.material.navigation.NavigationView
+
+
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/draweradd"
+        android:background="#570C0C"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        app:menu="@menu/menu_add"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom_nav"
+        app:menu="@menu/menu_bottom"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
